@@ -9,9 +9,10 @@ but without the audio, it does not do me much good---I need those sweet sweet
 puzzles piped directly into my ears.
 
 When invoked, `npr-puzzle` will
-    - scrape the NPR Sunday Puzzle page,
-    - lex the results into podcast descriptions
-    - write a podcast xml to $REPO/npr-puzzle.xml
+
+ - scrape the NPR Sunday Puzzle page,
+ - lex the results into podcast descriptions
+ - write a podcast xml to $REPO/npr-puzzle.xml
 
 If invoked with `--publish`, will add the changes to that xml to the repository, and push.
 
