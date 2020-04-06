@@ -8,7 +8,7 @@ stopped offering it in podcast form factor.  It is available as [an RSS feed][np
 but without the audio, it does not do me much good---I need those sweet sweet
 puzzles piped directly into my ears.
 
-When invoked, `npr-puzzle` will
+When invoked, [`npr-puzzle`][pages] will
 
  - scrape the NPR Sunday Puzzle page,
  - lex the results into podcast descriptions
@@ -16,7 +16,7 @@ When invoked, `npr-puzzle` will
 
 If invoked with `--publish`, will add the changes to that xml to the repository, and push.
 
-Since I am running this myself, the feed will be pushed to this repository,
+Since I am running this myself, the feed will be pushed to [this repository][repo],
 so that one may subscribe directly to [the podcast][podcast].
 
 Using `launchd` with `npr-puzzle.plist` will cause this to happen once a week,
@@ -24,6 +24,8 @@ after the puzzle is published online, so that the XML will be updated for easy l
 
 [npr]:                      https://npr.org/puzzle
 [npr-rss]:                  https://feeds.npr.org/4473090/rss.xml
+[pages]:                    https://evanberkowitz.github.io/npr-sunday-puzzle-podcast/
 [podcast]:                  https://raw.githubusercontent.com/evanberkowitz/npr-sunday-puzzle-podcast/master/npr-puzzle.xml
+[repo]:                     https://github.com/evanberkowitz/npr-sunday-puzzle-podcast
 [weekend-edition-sunday]:   https://www.npr.org/programs/weekend-edition-sunday/
 [shortz]:                   https://willshortz.com/
