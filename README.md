@@ -15,11 +15,14 @@ When invoked, `npr-puzzle` will
  - write a podcast xml to $REPO/npr-puzzle.xml
 
 If invoked with `--publish`, will add the changes to that xml to the repository, and push.
+Since I am running this myself, the feed will be pushed to this repository,
+so that one may subscribe directly to [the podcast][podcast].
 
 Using `launchd` with `npr-puzzle.plist` will cause this to happen once a week,
 after the puzzle is published online, so that the XML will be updated for easy listening.
 
 [npr]:                      https://npr.org/puzzle
 [npr-rss]:                  https://feeds.npr.org/4473090/rss.xml
+[podcast]:                  https://raw.githubusercontent.com/evanberkowitz/npr-sunday-puzzle-podcast/master/npr-puzzle.xml
 [weekend-edition-sunday]:   https://www.npr.org/programs/weekend-edition-sunday/
 [shortz]:                   https://willshortz.com/
