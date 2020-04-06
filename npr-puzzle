@@ -26,10 +26,9 @@ scraped = nprpuzzle.scrape()
 lexed   = [ nprpuzzle.lex(s) for s in scraped ]
 feed    = nprpuzzle.feed(lexed)
 
-# Make it pretty
-soup = Soup(feed.to_xml(), "html.parser")
+# Write it out:
 with open(OUTPUT, 'w') as xml:
-    xml.write(soup.prettify())
+    feed.write_xml(xml)
 
 # Publish if requested:
 if args.publish:
@@ -39,4 +38,3 @@ if args.publish:
     git.add(OUTPUT)
     git.commit(m=f"Feed for {feed.lastBuildDate}")
     git.push()
-    print(git.status())

@@ -3,7 +3,7 @@ import PyRSS2Gen as RSS2
 
 FEED_DATA = {
     'title': 'Sunday Puzzle',
-    'link':  'npr.org/puzzle',
+    'link':  'https://npr.org/puzzle',
     'description': "The Weekly Quiz from NPR Puzzlemaster Will Shortz",
 
     'lastBuildDate': datetime.datetime.now(),
@@ -11,7 +11,7 @@ FEED_DATA = {
     'image': RSS2.Image(
         url = 'https://willshortz.com/images/Shortz_Will.jpg',
         title = 'Will Shortz',
-        link  = 'npr.org/puzzle'
+        link  = 'https://npr.org/puzzle'
     ),
 
     'ttl': 24*60,
