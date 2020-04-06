@@ -2,6 +2,8 @@
 
 [The Sunday Puzzle][npr] is a feature on [Weekend Edition Sunday][weekend-edition-sunday]
 where a contestant plays an on-air quiz with [Will Shortz][shortz].
+[The podcast built here][podcast] can be constructed, enjoyed, or subscribed to by anyone wishing to enjoy
+the puzzle.
 
 The puzzle _used_ to be available as a podcast.  But, for whatever reason, NPR
 stopped offering it in podcast form factor.  It is available as [an RSS feed][npr-rss]
