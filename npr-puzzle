@@ -1,10 +1,38 @@
 #!/usr/bin/env python3
 
+# Find this repository:
+import os
+DIR = os.path.dirname(os.path.realpath(__file__))
+
+# Provide help and decide whether to publish:
+import argparse
+with open(os.path.join(DIR,'README.md'), 'r') as readme:
+    parser = argparse.ArgumentParser(
+        prog='npr-puzzle',
+        formatter_class = argparse.RawDescriptionHelpFormatter,
+        description=readme.read()
+    )
+
+parser.add_argument("--publish", help="Push to repository.", action="store_true")
+args = parser.parse_args()
+
+# Scrape, lex, and write a feed:
 import nprpuzzle
+
+OUTPUT ='npr-puzzle.xml'
 
 scraped = nprpuzzle.scrape()
 lexed   = [ nprpuzzle.lex(s) for s in scraped]
 feed    = nprpuzzle.feed(lexed)
 
-with open('npr-puzzle.xml', 'w') as xml:
+with open(OUTPUT, 'w') as xml:
     feed.write_xml(xml)
+
+if args.publish:
+    import sh
+
+    git = sh.git.bake(_cwd=DIR)
+    git.add(OUTPUT)
+    git.commit(m=f"Feed for {feed.lastBuildDate}")
+    git.push()
+    print(git.status())
