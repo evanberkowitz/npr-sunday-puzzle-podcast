@@ -15,6 +15,7 @@ When invoked, `npr-puzzle` will
  - write a podcast xml to $REPO/npr-puzzle.xml
 
 If invoked with `--publish`, will add the changes to that xml to the repository, and push.
+
 Since I am running this myself, the feed will be pushed to this repository,
 so that one may subscribe directly to [the podcast][podcast].
 
