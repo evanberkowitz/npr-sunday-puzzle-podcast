@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## The NPR Sunday Puzzle
 
-You can use the [editor on GitHub](https://github.com/evanberkowitz/npr-sunday-puzzle-podcast/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[The Sunday Puzzle][npr] is a feature on [Weekend Edition Sunday][weekend-edition-sunday]
+where a contestant plays an on-air quiz with [Will Shortz][shortz].
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The puzzle _used_ to be available as a podcast.  But, for whatever reason, NPR
+stopped offering it in podcast form factor.  It is available as [an RSS feed][npr-rss]
+but without the audio, it does not do me much good---I need those sweet sweet
+puzzles piped directly into my ears.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/evanberkowitz/npr-sunday-puzzle-podcast/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[npr]:                      https://npr.org/puzzle
+[npr-rss]:                  https://feeds.npr.org/4473090/rss.xml
+[weekend-edition-sunday]:   https://www.npr.org/programs/weekend-edition-sunday/
+[shortz]:                   https://willshortz.com/
