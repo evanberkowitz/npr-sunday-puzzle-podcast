@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import nprpuzzle
+
+scraped = nprpuzzle.scrape()
+lexed   = [ nprpuzzle.lex(s) for s in scraped]
+feed    = nprpuzzle.feed(lexed)
+
+with open('npr-puzzle.xml', 'w') as xml:
+    feed.write_xml(xml)
