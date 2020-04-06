@@ -5,11 +5,23 @@
     <key>Label</key>
     <string>com.evanberkowitz.npr-puzzle</string>
 
+    <key>UserName</key>
+    <string>evanberkowitz</string>
+
     <key>WorkingDirectory</key>
     <string>/Users/evanberkowitz/src/npr-sunday-puzzle-podcast</string>
 
-    <key>Program</key>
-    <string>/Users/evanberkowitz/src/npr-sunday-puzzle-podcast/npr-puzzle</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/evanberkowitz/src/npr-sunday-puzzle-podcast/npr-puzzle</string>
+        <string>--publish</string>
+    </array>
 
     <key>StartCalendarInterval</key>
     <dict>
