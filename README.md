@@ -5,6 +5,16 @@ where a contestant plays an on-air quiz with [Will Shortz][shortz].
 [The podcast built here][podcast] can be constructed, enjoyed, or subscribed to by anyone wishing to enjoy
 the puzzle.
 
+### To Subscribe
+
+Most podcast applications allow you to subscribe directly via [the URL of the feed][podcast].
+On MacOS, for example, in the Podcasts app, the option is under `File > Add a Show by URL...`.
+In the iOS Podcasts app, if you're looking at the `Library` pane,
+there is an `Edit` option in the upper-right corner which, when clicked,
+also presents an `Add a Show by URL...` option.
+
+### Technical Details
+
 The puzzle _used_ to be available as a podcast.  But, for whatever reason, NPR
 stopped offering it in podcast form factor.  It is available as [an RSS feed][npr-rss]
 but without the audio, it does not do me much good---I need those sweet sweet
