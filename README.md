@@ -13,6 +13,9 @@ In the iOS Podcasts app, if you're looking at the `Library` pane,
 there is an `Edit` option in the upper-right corner which, when clicked,
 also presents an `Add a Show by URL...` option.
 
+Some players may implement a stricter protocol than is supported by hosting the podcast as raw content on github.
+I am exploring other hosting options to allow these podcatchers to successfully subscribe.
+
 ### Technical Details
 
 The puzzle _used_ to be available as a podcast.  But, for whatever reason, NPR
